@@ -42,6 +42,7 @@ public class RobotContainer {
   private void configureBindings() {
     new JoystickButton(xboxController, Button.kRightBumper.value).whileTrue(new IntakeIn(coralIntake, 1, digitalInput));
     new JoystickButton(xboxController, Button.kLeftBumper.value).whileTrue(new IntakeOut(coralIntake, 1));
+    new JoystickButton(xboxController, Button.kA.value).whileTrue(new ElevatorL4());
   }
 
   /**
